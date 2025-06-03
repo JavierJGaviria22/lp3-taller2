@@ -19,5 +19,5 @@ if __name__ == "__main__":
     debug = os.environ.get("FLASK_DEBUG", "False").lower() in ("true", "1", "yes")
     
     # TODO: Ejecutar aplicación
-
+    app.run(host="0.0.0.0", port=port, debug=debug)
     pass
