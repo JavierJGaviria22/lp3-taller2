@@ -16,7 +16,7 @@ def validar_correo(correo):
         bool: True si el correo es válido, False en caso contrario
     """
     # TODO: crear la expresión regular para validar el correo
-    patron = ""
+    patron = r"^[\w\.-]+@[\w\.-]+\.\w+$"
     return bool(re.match(patron, correo))
 
 def formatear_duracion(segundos):
