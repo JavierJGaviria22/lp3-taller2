@@ -159,6 +159,7 @@ class CancionAPI(Resource):
     def get(self, id):
         """Obtiene una canción por su ID"""
         # TODO: pendiente de implementar
+        return Cancion.query.get_or_404(id)
         pass
     
     @ns.doc("Actualizar una canción")
