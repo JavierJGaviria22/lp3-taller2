@@ -122,6 +122,7 @@ class CancionListAPI(Resource):
     def get(self):
         """Obtiene todas las canciones registradas"""
         # TODO: pendiente de implementar
+        return Cancion.query.all()
         pass
     
     @ns.doc("Crear una nueva canción")
