@@ -24,6 +24,7 @@ class Ping(Resource):
     def get(self):
         """Endpoint para verificar que la API está funcionando"""
         # TODO: pendiente de implementar
+        return {"mensaje": "API funcionando correctamente"}, 200
         pass
 
 # Recursos para Usuarios
