@@ -1,0 +1,13 @@
+# Configuración de la base de datos
+SQLALCHEMY_DATABASE_URI=sqlite:///musica.db
+SQLALCHEMY_TRACK_MODIFICATIONS=False
+
+# Configuración de la aplicación
+DEBUG=True
+FLASK_APP=app.py
+FLASK_ENV=development
+
+# Configuración API
+API_TITLE="API de Música"
+API_VERSION="1.0"
+
