@@ -58,6 +58,7 @@ def generar_slug(texto):
     slug = re.sub(r"-{2,}", "-", slug)
     
     # TODO: Eliminar guiones al inicio y final
+    slug = slug.strip("-")
     
     return slug
 
