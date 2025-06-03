@@ -74,6 +74,7 @@ class UsuarioAPI(Resource):
     def get(self, id):
         """Obtiene un usuario por su ID"""
         # TODO: pendiente de implementar
+        return Usuario.query.get_or_404(id)
         pass
     
     @ns.doc("Actualizar un usuario")
