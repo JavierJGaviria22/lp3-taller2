@@ -6,6 +6,7 @@ from musica_api import create_app
 from dotenv import load_dotenv
 
 # TODO: Cargar variables de entorno desde archivo .env si existe
+load_dotenv()
 
 # TODO: crear la aplicación
 
