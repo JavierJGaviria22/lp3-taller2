@@ -231,6 +231,7 @@ class FavoritoListAPI(Resource):
     def get(self):
         """Obtiene todos los registros de favoritos"""
         # TODO: pendiente de implementar
+        return Favorito.query.all()
         pass
     
     @ns.doc("Marcar una canción como favorita")
