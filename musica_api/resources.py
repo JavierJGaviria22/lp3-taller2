@@ -36,6 +36,7 @@ class UsuarioListAPI(Resource):
     def get(self):
         """Obtiene todos los usuarios registrados"""
         # TODO: pendiente de implementar
+        return Usuario.query.all()
         pass
     
     @ns.doc("Crear un nuevo usuario")
